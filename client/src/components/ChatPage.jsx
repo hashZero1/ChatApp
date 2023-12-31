@@ -23,9 +23,9 @@ const ChatPage = ({socket}) => {
   }, [messages]);
 
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen bg-violet-400 p-4 ">
       <ChatUserComponent socket={socket}/>
-      <div className="w-screen flex flex-col justify-between">
+      <div className="w-screen flex flex-col justify-between bg-gray-100 rounded-tr-3xl rounded-br-3xl shadow-md">
         <ChatBody 
         messages={messages} 
         lastMessageRef={lastMessageRef} 

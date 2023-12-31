@@ -24,12 +24,12 @@ const ChatBox = ({socket}) => {
   }
 
     return (
-      <div className="bg-orange-100 p-2">
+      <div className="bg-violet-200 p-4 shadow-sm rounded-br-3xl">
         <form className="form" onSubmit={handleSendMessage}>
           <input
             type="text"
             placeholder="Write message"
-            className="px-4 py-2 lg:px-5 lg:py-3 w-3/4 lg:w-4/6 text-xl lg:text-2xl bg-white rounded-tl-lg rounded-bl-lg"
+            className="px-4 py-2 lg:px-5 lg:py-3 w-3/4 lg:w-11/12 text-xl lg:text-2xl bg-white rounded-tl-lg rounded-bl-lg"
             value={message}
             onChange={handleChange}
             onKeyDown={handleTyping}
