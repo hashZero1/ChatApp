@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import ChatUserComponent from './ChatUserComponent';
 import ChatBody from './ChatBody';
 import ChatBox from './ChatBox';
+import ChatSidebar from './ChatSidebar';
 
 
 const ChatPage = ({socket}) => { 
@@ -24,7 +24,7 @@ const ChatPage = ({socket}) => {
 
   return (
     <div className="flex h-screen bg-violet-400 p-4 ">
-      <ChatUserComponent socket={socket}/>
+      <ChatSidebar socket={socket}/>
       <div className="w-screen flex flex-col justify-between bg-gray-100 rounded-tr-3xl rounded-br-3xl shadow-md">
         <ChatBody 
         messages={messages} 
