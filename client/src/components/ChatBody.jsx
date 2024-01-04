@@ -12,15 +12,15 @@ const ChatBody = ({messages, lastMessageRef, typingStatus}) => {
   };
   
   return (
-    <section>
+    <section className='h-[90%]'>
       <header className="bg-violet-200 flex justify-between  p-5 rounded-tr-3xl ">
         <h1 className='text-2xl bg-white py-2 px-4 rounded-lg text-gray-800'>Hangout with Colleagues</h1>
-        <button className="px-4 py-2 lg:px-5 lg:py-3 text-lg bg-orange-400 text-white font-semibold hover:bg-gray-800 hover:text-white lg:text-lg rounded-lg " onClick={handleLeaveChat}>
+        <button className="px-4 py-2 lg:px-5 lg:py-3 text-lg bg-orange-400 text-white font-semibold hover:bg-red-600 hover:text-white lg:text-lg rounded-lg " onClick={handleLeaveChat}>
           LEAVE CHAT
         </button>
       </header>
       {/*This shows messages sent from you*/}
-      <div className="mx-8 my-4 text-xl text-gray-900">
+      <div className="mx-8 my-4 text-xl text-gray-900 h-[86%] overflow-y-scroll no-scrollbar">
       {messages.map(message => (
             message.name === localStorage.getItem("userName") ? (
               <div className="flex justify-end  capitalize m-2  rounded-2xl" key={message.id}>
