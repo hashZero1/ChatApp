@@ -4,7 +4,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-Clone the project then go to the client and server then run ###  `npm install`
+Clone the project then go to the client and server then run  `npm install`
+Then you can run,
 
 ### `npm start`
 
